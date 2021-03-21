@@ -1,9 +1,7 @@
 <?php 
     $filepath = realpath(dirname(__FILE__));
 	include_once ($filepath.'/inc/header.php');
-?>
-<?php
-  // Session::checkLogin();
+	// include_once ($filepath.'/../lib/Session.php');
 ?>
 
 <div class="main">

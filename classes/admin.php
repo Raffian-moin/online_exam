@@ -1,8 +1,8 @@
 <?php
 $filepath=realpath(dirname(__FILE__));
-include($filepath.'/../lib/Database.php');
-include($filepath.'/../lib/Session.php');
-include($filepath.'/../helpers/Format.php');
+include_once ($filepath.'/../lib/Database.php');
+include_once ($filepath.'/../lib/Session.php');
+include_once ($filepath.'/../helpers/Format.php');
 
 
 class admin{
@@ -27,7 +27,7 @@ class admin{
         if($result != FALSE){
             $value=$result->fetch_assoc();
             Session::init();
-            Session::set('adminLogin','true');
+            Session::set('adminLogin',true);
             Session::set('adminEmail',$value['email']);
             Session::set('adminLogin',$value['password']);
 
